@@ -20,9 +20,9 @@ function SearchBar({
         />
       </div>
       <div className="flex flex-row gap-5">
-        <label htmlFor="search">Show only watched movies</label>
+        <label htmlFor="watched">Show only watched movies</label>
         <input
-          id="search"
+          id="watched"
           type="checkbox"
           onChange={(e) => onIsWatchedOnlyChange(e.target.checked)}
           checked={isWatchedOnly}
@@ -33,21 +33,19 @@ function SearchBar({
 }
 
 function MoviesList({ isWatchedOnly, filterText }) {
+  const filteredMovies = movies.filter((movie) => {
+    if (isWatchedOnly && !movie.watched) return false;
+
+    return movie.title.toLowerCase().includes(filterText.toLowerCase());
+  });
+
   return (
     <ul>
-      {movies.map((movie) => {
-        if (isWatchedOnly && !movie.watched) return;
-        if (
-          movie.title.toLowerCase().indexOf(filterText.toLowerCase()) === -1
-        ) {
-          return;
-        }
-        return (
-          <li key={movie.id} className={movie.watched && "text-green-600"}>
-            {movie.title}
-          </li>
-        );
-      })}
+      {filteredMovies.map((movie) => (
+        <li key={movie.id} className={movie.watched ? "text-green-600" : ""}>
+          {movie.title}
+        </li>
+      ))}
     </ul>
   );
 }
