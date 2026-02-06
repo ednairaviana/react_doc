@@ -1,0 +1,12 @@
+🧪 EXERCISE: Movie List with Filters
+
+You are going to build a movie list UI with search and a simple filter.
+
+🎯 What the app should do
+
+Display a list of movies
+
+Allow the user to search by movie title
+
+Have a checkbox:
+“Show only watched movies”
