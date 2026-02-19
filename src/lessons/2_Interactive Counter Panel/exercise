@@ -1,0 +1,49 @@
+# 🧪 Exercise: Interactive Counter Panel
+
+In this exercise, you will build a small interactive React component to explore how state and rendering work in practice.
+
+## 🎯 Objective
+
+Create a component that:
+
+- Displays a number (starting at 0)
+- Includes three buttons:
+  - Increase
+  - Decrease
+  - Reset
+- Updates the displayed value when the user interacts with the buttons
+
+## 🧠 Purpose
+
+This exercise is designed to help you understand:
+
+- How `useState` manages state in functional components
+- How state updates trigger re-renders
+- The difference between code that runs during rendering and code that runs inside event handlers
+- How React handles multiple state updates
+
+## 🔍 Exploration Task
+
+Inside your component:
+
+- Add a `console.log("Rendering")` at the top of the component body
+- Add a `console.log("Button clicked")` inside each event handler
+
+Observe and answer:
+
+- When does the component re-render?
+- How many times does it render per click?
+- Does state update immediately?
+- What happens if you click very fast?
+
+## 🚀 Extra Challenge
+
+Add a new button called **"Add 3"**.
+
+Inside the click handler, write:
+
+```js
+setCount(count + 1);
+setCount(count + 1);
+setCount(count + 1);
+```
