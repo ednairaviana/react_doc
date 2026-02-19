@@ -6,10 +6,10 @@ function View() {
   function handleCounterChange(operation) {
     switch (operation) {
       case "+":
-        setCounter(counter + 1);
+        setCounter((counter) => counter + 1);
         break;
       case "-":
-        setCounter(counter - 1);
+        setCounter((counter) => counter - 1);
         break;
       case "reset":
         setCounter(0);
