@@ -1,20 +1,60 @@
-<<<<<<< HEAD
-# React + Vite
+# React Documentation Study Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a personal study project created while learning React by following the official documentation and practicing concepts through hands-on examples.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**
+https://ednairaviana.github.io/react_doc/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The purpose of this project is to reinforce React concepts by building small examples and experimenting with features described in the documentation.
 
-## Expanding the ESLint configuration
+This repository serves as a learning journal and practical reference while progressing through React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# react_doc
->>>>>>> 3f48f302081b4ea530ed70164eff1d1cb31caaa1
+Concepts practiced include:
+
+* JSX fundamentals
+* Components and Props
+* State management
+* Event handling
+* Conditional rendering
+* Lists and Keys
+* React Hooks (useState, useEffect, etc.)
+* Component organization and best practices
+
+---
+
+## Objectives
+
+* Practice React concepts from the official documentation
+* Improve understanding of React fundamentals
+* Build confidence creating React applications
+* Maintain a reference project for future learning
+
+---
+
+## Technologies Used
+
+* React
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Git and GitHub
+* GitHub Pages (deployment)
+
+---
+
+## Learning Source
+
+Official React Documentation:
+https://react.dev/
+
+---
+
+## Author
+
+Ednaira Viana
+
+GitHub: https://github.com/ednairaviana
