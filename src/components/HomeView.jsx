@@ -31,9 +31,9 @@ function HomeView() {
   const ActiveView = lessons[activePath].default;
 
   return (
-    <div className="container grid grid-cols-[1fr_2fr]">
+    <div className="container grid grid-cols-[1fr_2fr] gap-[60px]">
       <aside>
-        <ul>
+        <ul className="flex flex-col gap-1">
           <AsideItems lessons={lessons} onSelect={setActivePath} />
         </ul>
       </aside>

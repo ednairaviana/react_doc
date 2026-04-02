@@ -40,6 +40,23 @@ input[type="checkbox"] {
   min-height: 25px;
 }
 
+button {
+  background-color: #ffffff14;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+aside button {
+  width: 100%;
+  text-align: start;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
