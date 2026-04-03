@@ -39,7 +39,7 @@ function PwChecker() {
     const failed = RULES.find(
       (rule) => (newPw.search(rule.regex) !== -1) !== rule.condition,
     );
-    if (failed) return { status: "danger", message: failed.invalid_message };
+    if (failed) return { status: "warning", message: failed.invalid_message };
 
     return { status: "safe", message: "Valid Password" };
   }
@@ -47,6 +47,7 @@ function PwChecker() {
   function setStyle() {
     const style = {
       border: "1px solid grey",
+      transition: "all 0.2s ease",
     };
 
     switch (status.status) {
