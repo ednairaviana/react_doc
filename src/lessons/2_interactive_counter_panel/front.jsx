@@ -19,7 +19,7 @@ function View() {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-3">
         <button onClick={() => handleCounterChange("+")}>+</button>
         <button onClick={() => handleCounterChange("-")}>-</button>
         <button onClick={() => handleCounterChange("reset")}>Reset</button>

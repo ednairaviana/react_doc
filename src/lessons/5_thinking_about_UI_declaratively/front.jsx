@@ -75,6 +75,7 @@ function PwChecker() {
         value={pw}
         onChange={(e) => setPw(e.target.value)}
         type="text"
+        className="mb-3"
       />
       <p>{status.message}</p>
     </form>
