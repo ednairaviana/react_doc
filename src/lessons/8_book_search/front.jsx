@@ -94,10 +94,7 @@ function View() {
           value={value}
         />
       </div>
-      <ul
-        style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
-        className="grid gap-2"
-      >
+      <ul className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {resultStatus === "success" ? (
           books.docs.map((book) => {
             return (

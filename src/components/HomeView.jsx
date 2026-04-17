@@ -33,7 +33,10 @@ function HomeView() {
   return (
     <div className="container grid grid-cols-[1fr_2fr] gap-[60px]">
       <aside>
-        <ul className="flex flex-col gap-1">
+        <ul
+          style={{ position: "sticky", top: 0 }}
+          className="flex flex-col gap-1 pt-2.5 -mt-2.5"
+        >
           <AsideItems lessons={lessons} onSelect={setActivePath} />
         </ul>
       </aside>
